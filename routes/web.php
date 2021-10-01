@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Welcome Page
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Authentication
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/users/list', [App\Http\Controllers\HomeController::class, 'usersList'])->name('users.list');
+// Dashboard Information And 
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Users Information And Creation
 Route::resource('users', 'UserController');
-Route::get('users/destroy/{id}', 'UserController@destroy')->name('users.destroy');

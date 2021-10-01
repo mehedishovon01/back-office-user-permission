@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Dashboard')
 @section('header')
     <div class="page-title-heading text-primary">
         Dashboard Monitoring

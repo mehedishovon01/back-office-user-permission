@@ -1,8 +1,13 @@
            <div class="app-sidebar-wrapper">
                <div class="app-sidebar sidebar-shadow">
                    <div class="app-header__logo">
-                       <a href="#" data-toggle="tooltip" data-placement="bottom" title="KeroUI Admin Template"
-                           class="logo-src"></a>
+                       <a href="{{ route('home') }}" data-toggle="tooltip" data-placement="bottom" title="Back Office System">
+                           {{-- <img width="42" class="rounded" src="http://127.0.0.1:8000/assets/images/avatars/3.jpg" alt=""> --}}
+                           <div class="icon-wrapper rounded-circle">
+                               <div class="icon-wrapper-bg opacity-10 bg-warning"></div>
+                               <i class="lnr-laptop-phone text-dark opacity-8"></i>
+                           </div>
+                       </a>
                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
                            <span class="hamburger-box">
                                <span class="hamburger-inner"></span>
@@ -59,13 +64,13 @@
                                    </a>
                                    <ul>
                                        <li>
-                                           <a href="components-tabs.html">
+                                           <a href="#">
                                                <i class="metismenu-icon"></i>
                                                Permitted Users List
                                            </a>
                                        </li>
                                        <li>
-                                           <a href="components-accordions.html">
+                                           <a href="#">
                                                <i class="metismenu-icon"></i>
                                                Give Permission
                                            </a>

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Create New User')
 @section('header')
     <div class="page-title-heading text-primary">
         Add New User

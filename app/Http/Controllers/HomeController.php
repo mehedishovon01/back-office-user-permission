@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -26,10 +24,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-    // public function usersList()
-    // {
-    //     $data['users'] = User::paginate(30);
-    //     return view('users.index', $data);
-    // }
 }

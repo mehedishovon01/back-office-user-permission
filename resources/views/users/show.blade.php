@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'User Ditails')
 @section('header')
     <div class="page-title-heading text-primary">
         Users List

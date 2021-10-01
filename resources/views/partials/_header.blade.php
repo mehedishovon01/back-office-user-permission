@@ -1,3 +1,29 @@
+<div class="header-mobile-wrapper">
+    <div class="app-header__logo">
+        <a href="{{ route('home') }}" data-toggle="tooltip" data-placement="bottom" title="Back-Office System">
+            {{-- <img width="42" class="rounded" src="http://127.0.0.1:8000/assets/images/avatars/3.jpg" alt=""> --}}
+            <div class="icon-wrapper rounded-circle">
+                <div class="icon-wrapper-bg opacity-10 bg-warning"></div>
+                <i class="lnr-laptop-phone text-dark opacity-8"></i>
+            </div>
+        </a>
+        <button type="button" class="hamburger hamburger--elastic mobile-toggle-sidebar-nav">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="app-header__menu">
+            <span>
+                <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                    <span class="btn-icon-wrapper">
+                        <i class="fa fa-ellipsis-v fa-w-6"></i>
+                    </span>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
+
 <div class="app-header">
     @yield('header')
     <div class="app-header-right">
@@ -181,37 +207,43 @@
                                                                                     alt="">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                        <div
+                                                                            class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon">
                                                                                 <img src="assets/images/avatars/2.jpg"
                                                                                     alt="">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                        <div
+                                                                            class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon">
                                                                                 <img src="assets/images/avatars/3.jpg"
                                                                                     alt="">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                        <div
+                                                                            class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon">
                                                                                 <img src="assets/images/avatars/4.jpg"
                                                                                     alt="">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                        <div
+                                                                            class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon">
                                                                                 <img src="assets/images/avatars/5.jpg"
                                                                                     alt="">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                        <div
+                                                                            class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon">
                                                                                 <img src="assets/images/avatars/9.jpg"
                                                                                     alt="">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                        <div
+                                                                            class="avatar-icon-wrapper avatar-icon-sm">
                                                                             <div class="avatar-icon">
                                                                                 <img src="assets/images/avatars/7.jpg"
                                                                                     alt="">
