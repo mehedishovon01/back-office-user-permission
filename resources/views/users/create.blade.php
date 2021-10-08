@@ -161,7 +161,7 @@
                 <br>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary" value="Sign up">Sign up
+                    <button type="submit" class="btn btn-primary" value="Sign up">Create
                     </button>
                 </div>
             </form>

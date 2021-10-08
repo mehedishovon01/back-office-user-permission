@@ -27,3 +27,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Users Information And Creation
 Route::resource('users', 'UserController');
+
+// Given Permission
+Route::resource('give-permissions', 'Permission\PermissionController');

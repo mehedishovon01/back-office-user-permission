@@ -139,27 +139,30 @@
                             </td>
                             <td>
                                 <div role="group" class="btn-group-sm btn-group">
-                                    <button class="btn-shadow btn btn-success" data-type="success">Hire</button>
-                                    <button class="btn-shadow btn btn-primary">Fire</button>
-                                    <a href="#" data-type="Delete" class="btn-shadow btn btn-danger btn btn-primary">Del</a>
-                                    {{-- <form action="{{ route('users.destroy', $value->id) }}" id="deleteItemForm"
-                                        method="POST">
+                                    <a href="{{ route('users.show', $value->id) }}"
+                                        class="btn-shadow btn btn-success">View</a>
+                                    <a href="" class="btn-shadow btn btn-primary">Fire</a>
+                                    <form action="{{ route('users.destroy', $value->id) }}" method="POST">
                                         @csrf
                                         @method("DELETE")
-                                    </form> --}}
+                                        <button type="submit" class="btn-shadow btn btn-sm btn-danger">Del</button>
+                                    </form>
                                 </div>
                             </td>
                         </tr>
                     @endforeach
                 </tbody>
+
+                {{-- If value equals to 0 --}}
+                @if (count($users) < 0)
+                    <tr>
+                        <td colspan="15" class="text-center text-danger">No records found!</td>
+                    </tr>
+                @endif
             </table>
         </div>
-        <div class="d-block p-4 text-center card-footer">
-            <button class="btn-pill btn-shadow btn-wide fsize-1 btn btn-dark btn-lg">
-                <span class="mr-2 opacity-7"><i class="fa fa-cog fa-spin"></i>
-                </span>
-                <span class="mr-1">View Complete Report</span>
-            </button>
-        </div>
+
+        {{-- Rounded Paginations --}}
+        @include('partials._paginate',['style' => 'rounded', 'data' => $users,])
     </div>
 @endsection

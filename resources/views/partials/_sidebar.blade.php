@@ -56,7 +56,7 @@
                                        </li>
                                    </ul>
                                </li>
-                               <li>
+                               <li class="mm-{{ request()->segment(1) == 'give-permissions' ? 'active' : '' }}">
                                    <a href="#">
                                        <i class="metismenu-icon pe-7s-key"></i>
                                        Permission
@@ -70,7 +70,8 @@
                                            </a>
                                        </li>
                                        <li>
-                                           <a href="#">
+                                           <a class="mm-{{ request()->is('give-permissions') ? 'active' : '' }}" 
+                                            href="{{ route('give-permissions.index') }}">
                                                <i class="metismenu-icon"></i>
                                                Give Permission
                                            </a>

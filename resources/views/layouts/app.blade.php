@@ -64,6 +64,10 @@
 
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script type="text/javascript" src="{{ asset('assets/scripts/main.07a59de7b920cd76b874.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-2.1.4.min.js') }}"></script>
+
+    {{-- JS --}}
+    @yield('javascript')
 </body>
 
 </html>
